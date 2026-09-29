@@ -104,6 +104,42 @@
 
    <fieldset>
     <legend>Eğitim Tercihleri ve Detaylar</legend>
+      <label for="ders">İlgilenilen Ders (Zorunlu):</label><br>
+    <select id="ders" name="ders" required>
+      <option value="">-- Seçiniz --</option>
+      <option value="frontend">Frontend Web Development</option>
+      <option value="backend">Backend Development</option>
+      <option value="cybersecurity">Siber Güvenlik</option>
+      <option value="mobil">Mobil Programlama</option>
+    </select>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>Deneyim Düzeyi (Zorunlu)</legend>
+    <label><input type="radio" name="deneyim" value="baslangic" required> Başlangıç</label><br>
+    <label><input type="radio" name="deneyim" value="orta" required> Orta</label><br>
+    <label><input type="radio" name="deneyim" value="ileri" required> İleri</label>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>İletişim ve Bildirim Tercihleri</legend>
+    <p>İletişim Kanalları:</p>
+    <label><input type="checkbox" name="iletisim_sms" value="1"> SMS ile bilgilendirilmek istiyorum.</label><br>
+    <label><input type="checkbox" name="iletisim_email" value="1"> E-posta bültenine abone ol.</label>
+  </fieldset><br>
+
+  <fieldset>
+    <legend>Mesaj ve Onaylar</legend>
+
+    <label for="mesaj">Mesaj Alanı (Zorunlu):</label><br>
+    <textarea id="mesaj" name="mesaj" rows="4" required></textarea><br><br>
+
+    <label>
+      <input type="checkbox" name="kvkk" required> KVKK Onayı (Zorunlu): Metni okudum ve kabul ediyorum.
+    </label>
+  </fieldset><br>
+
+
 
 
 
